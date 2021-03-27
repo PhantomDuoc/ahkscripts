@@ -35,8 +35,8 @@ k::
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
 	MouseMove, x, y
-	Sleep, 10000
-	SoundPlay *-1
+;	Sleep, 10000
+;	SoundPlay *-1
 }
 return
 
@@ -80,7 +80,7 @@ p::
 	MouseGetPos, x, y
 	MouseClick, left, 629, 937 ; click en plantillas
 	Sleep 300
-	MouseClick, left, 603, 867
+	MouseClick, left, 603, 867	;	click en 3ra plantilla
 	Sleep 300
 	MouseClick, left, 735, 932 ; click en aplicar plantillas en 1 oleada
 	Sleep 300
@@ -88,8 +88,7 @@ p::
 	Sleep, 300
 	MouseClick, left, 1424, 987 ; click en atacar
 	Sleep, 300
-	MouseClick, left, 1193, 570 ; click en con pluma
-;	MouseClick, left, 779, 530 ; click en velocidad oro
+	MouseClick, left, 1193, 570 ; click en con plumau
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
 	
@@ -103,12 +102,12 @@ n::
 	MouseGetPos, x, y
 	
 	Loop, 10{
-		MouseClick, left, 1210, 484
+		MouseClick, left, 1210, 484	;	click en el soldado a comprar
 		sleep, 400
 		Loop, 21{
-			MouseClick, left, 928, 582
+			MouseClick, left, 928, 582	;	click en +10 tropas
 		}
-		MouseClick, left, 1097, 659
+		MouseClick, left, 1097, 659	;	click en aceptar para comprar
 	}
 	MouseClick, left, 1087,661
 	MouseMove, x, y
@@ -119,11 +118,11 @@ return
 ;	espiar con oro
 s::
 {
-	MouseClick, left, 1107, 740
+	MouseClick, left, 1107, 740	;	click en palomilla aceptar
 	sleep, 50
-	MouseClick, left, 777, 554
+	MouseClick, left, 777, 554	;	click en velocidad oro
 	sleep, 50
-	MouseClick, left, 1111, 782
+	MouseClick, left, 1091, 768	;	click en palomilla aceptar
 
 }
 return
@@ -133,11 +132,11 @@ return
 {
 	MouseGetPos, x, y
 
-	MouseClick, left, 1107, 740
+	MouseClick, left, 1107, 740	;	click en palomilla aceptar
 	sleep, 50
-	MouseClick, left, 1170, 554
+	MouseClick, left, 1186, 562	;	click en velocidad pluma
 	sleep, 50
-	MouseClick, left, 1111, 782
+	MouseClick, left, 1091, 768	;	click en palomilla aceptar
 
 	MouseMove, x, y
 }
@@ -147,11 +146,11 @@ return
 a::
 {
 	MouseGetPos, x, yx
-	MouseClick, left, 1432, 1001
+	MouseClick, left, 1432, 1001 ;	click en apostar
 	sleep, 250
-	MouseClick, left, 1186, 562
+	MouseClick, left, 1186, 562	;	click en velocidad pluma
 	Sleep, 250
-	MouseClick, left, 1091, 768
+	MouseClick, left, 1091, 768	;	click en palomilla aceptar
 	MouseMove, x, y
 }
 Return
@@ -179,11 +178,11 @@ g::
 	MouseGetPos, x, y
 
 	Loop, 100{
-		MouseClick, left, 982, 772
+		MouseClick, left, 982, 772 ;	click en la gema
 		sleep, 500
-		MouseClick, left, 1148, 623
+		MouseClick, left, 1148, 623	;	click en la casilla para vender gemas
 		Sleep, 500
-		MouseClick, left, 1117, 704
+		MouseClick, left, 1117, 704	;	click en aceptar
 		sleep, 500
 	}
 }
