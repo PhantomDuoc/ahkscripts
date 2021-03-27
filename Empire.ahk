@@ -173,3 +173,18 @@ m::
 	MouseMove, x, y
 }
 return
+
+g::
+{
+	MouseGetPos, x, y
+
+	Loop, 100{
+		MouseClick, left, 982, 772
+		sleep, 500
+		MouseClick, left, 1148, 623
+		Sleep, 500
+		MouseClick, left, 1117, 704
+		sleep, 500
+	}
+}
+Return
