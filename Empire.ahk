@@ -58,6 +58,8 @@ return
 o::
 {
 	MouseGetPos, x, y
+	MouseClick, left, x+90, y+15
+	Sleep, 500
 	MouseClick, left, 1073, 695
 	Sleep, 700
 	MouseClick, left, 1306, 993 ; click en autorellenar todo
@@ -144,7 +146,7 @@ return
 ;	apostar tropas
 a::
 {
-	MouseGetPos, x, y
+	MouseGetPos, x, yx
 	MouseClick, left, 1432, 1001
 	sleep, 250
 	MouseClick, left, 1186, 562
@@ -159,7 +161,7 @@ Return
 m::
 {
 	MouseGetPos, x, y
-	MouseClick, left, 1126, 539
+	MouseClick, left, 1126, 539x
 	Sleep, 300
 	MouseClick, left, 916, 574
 	Sleep, 150
