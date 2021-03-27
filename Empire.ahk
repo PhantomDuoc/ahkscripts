@@ -140,6 +140,19 @@ return
 	MouseMove, x, y
 }
 return
+
+;	apostar tropas
+a::
+{
+	MouseClick, left, 1432, 1001
+	sleep, 250
+	MouseClick, left, 1186, 562
+	Sleep, 250
+	MouseClick, left, 1091, 768
+}
+Return
+	
+
 ;	eliminar enfriamiento 	
 m::
 {
@@ -147,6 +160,12 @@ m::
 	MouseClick, left, 1126, 539
 	Sleep, 300
 	MouseClick, left, 916, 574
+	Sleep, 150
+	MouseClick, left, 741, 578
+	Sleep, 150
+	MouseClick, left, 741, 578
+	Sleep, 150
+	MouseClick, left, 741, 578
 	Sleep, 150
 	MouseClick, left, 741, 578
 	Sleep, 150
