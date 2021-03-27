@@ -1,8 +1,3 @@
-#SingleInstance, Force
-SendMode Input
-SetWorkingDir, %A_ScriptDir%
-
-
 4::reload
 5::suspend
 ; hace click en autorrellenar (herreria) y luego hace click en la acción.
@@ -16,6 +11,7 @@ l::
 }
 return
 
+;	atacar eventos con oro
 k::
 {
 	MouseGetPos, x, y
@@ -58,22 +54,16 @@ i::
 }
 return
 
-p::
+;	atacar torres con oro
+o::
 {
 	MouseGetPos, x, y
-;	MouseClick, left, 629, 937 ; click en plantillas
-;	Sleep 300
-;	MouseClick, left, 603, 867
-;	Sleep 300
-;	MouseClick, left, 735, 932 ; click en aplicar plantillas en 1 oleada
-;	Sleep 300
-	MouseClick, left, 1074, 696
-	Sleep, 1000
+	MouseClick, left, 1073, 695
+	Sleep, 700
 	MouseClick, left, 1306, 993 ; click en autorellenar todo
 	Sleep, 300
 	MouseClick, left, 1424, 987 ; click en atacar
 	Sleep, 300
-;	MouseClick, left, 1193, 570 ; click en con pluma
 	MouseClick, left, 779, 530 ; click en velocidad oro
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
@@ -82,7 +72,8 @@ p::
 }
 return
 
-o::
+;	atacar islas con pluma
+p::
 {
 	MouseGetPos, x, y
 	MouseClick, left, 629, 937 ; click en plantillas
@@ -104,24 +95,26 @@ o::
 }
 return
 
-;	script para comprar unidades tanto nomadas como khan
+;	comprar soldados
 n::
 {
-	; 	poner unidad a comprar en esquina superior izq
+	MouseGetPos, x, y
 	
 	Loop, 10{
-			;	 veces que se compran 220 unidades
-			MouseClick, left, 922, 485
-			Sleep, 50
-		Loop, 22{	;	comprar unidad
-				MouseClick, left, 928, 580
-			}
-			Sleep, 50
-			MouseClick, left, 1087,661
+		MouseClick, left, 1210, 484
+		sleep, 400
+		Loop, 21{
+			MouseClick, left, 928, 582
+		}
+		MouseClick, left, 1097, 659
 	}
+	MouseClick, left, 1087,661
+	MouseMove, x, y
 }
 return
 
+
+;	espiar con oro
 s::
 {
 	MouseClick, left, 1107, 740
@@ -133,27 +126,33 @@ s::
 }
 return
 
+;	espiar con pluma
 +s::
 {
+	MouseGetPos, x, y
+
 	MouseClick, left, 1107, 740
 	sleep, 50
 	MouseClick, left, 1170, 554
 	sleep, 50
 	MouseClick, left, 1111, 782
 
+	MouseMove, x, y
 }
 return
-
-;	eliminar enfriamiento con tiempo, teniendo a la derecha 
-; 	reducciones de 1 hora y a la izq reducciones de 30 min
+;	eliminar enfriamiento 	
 m::
 {
- 	MouseClick, left, 1126, 536
+	MouseGetPos, x, y
+	MouseClick, left, 1126, 539
+	Sleep, 300
+	MouseClick, left, 916, 574
 	Sleep, 150
-	MouseClick, left, 1136, 578
+	MouseClick, left, 741, 578
 	Sleep, 150
-	MouseClick, left, 906, 578
-	Sleep, 200
-	MouseClick, left, 868, 695
+	MouseClick, left, 916, 574
+	Sleep, 450
+	MouseClick, left, 884, 696
+	MouseMove, x, y
 }
 return
