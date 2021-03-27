@@ -58,9 +58,9 @@ return
 o::
 {
 	MouseGetPos, x, y
-	MouseClick, left, x+90, y+15
+	MouseClick, left, x+90, y+15 ;	click en atacar DIANA
 	Sleep, 500
-	MouseClick, left, 1073, 695
+	MouseClick, left, 1073, 695  ;	click en palomilla verde aceptar
 	Sleep, 700
 	MouseClick, left, 1306, 993 ; click en autorellenar todo
 	Sleep, 300
@@ -161,21 +161,15 @@ Return
 m::
 {
 	MouseGetPos, x, y
-	MouseClick, left, 1126, 539x
+	MouseClick, left, 1126, 539 ;	click en reducir tiempo	
 	Sleep, 300
-	MouseClick, left, 916, 574
+	MouseClick, left, 916, 574 ;	click en primera casilla
 	Sleep, 150
-	MouseClick, left, 741, 578
-	Sleep, 150
-	MouseClick, left, 741, 578
-	Sleep, 150
-	MouseClick, left, 741, 578
-	Sleep, 150
-	MouseClick, left, 741, 578
+	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
 	Sleep, 150
 	MouseClick, left, 916, 574
 	Sleep, 450
-	MouseClick, left, 884, 696
+	MouseClick, left, 884, 696 ;	click en cerrar
 	MouseMove, x, y
 }
 return
