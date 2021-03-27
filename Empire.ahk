@@ -144,11 +144,13 @@ return
 ;	apostar tropas
 a::
 {
+	MouseGetPos, x, y
 	MouseClick, left, 1432, 1001
 	sleep, 250
 	MouseClick, left, 1186, 562
 	Sleep, 250
 	MouseClick, left, 1091, 768
+	MouseMove, x, y
 }
 Return
 	
