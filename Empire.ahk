@@ -88,9 +88,11 @@ return
 o::
 {
 	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep, 300
 	MouseClick, left, x+90, y+15 ;	click en atacar DIANA
 	Sleep, 500
-	MouseClick, left, 1073, 695  ;	click en palomilla verde aceptar
+	MouseClick, left, 1073, 695  ;	click en palomilla verde acecptar
 	Sleep, 700
 	MouseClick, left, 1306, 993 ; click en autorellenar todo
 	Sleep, 300
@@ -187,9 +189,13 @@ Return
 	
 
 ;	eliminar enfriamiento 	
-m::
++m::
 {
 	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep, 300
+	MouseClick, left, x+90, y+15 ;	click en atacar DIANA
+	Sleep, 500
 	MouseClick, left, 1126, 539 ;	click en reducir tiempo	
 	Sleep, 300
 	MouseClick, left, 916, 574 ;	click en primera casilla
@@ -197,6 +203,25 @@ m::
 	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
 	Sleep, 150
 	MouseClick, left, 916, 574
+	Sleep, 450
+	MouseClick, left, 884, 696 ;	click en cerrar
+	MouseMove, x, y
+}
+return
+
+;	eliminar enfriamiento 	
+m::
+{
+	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep, 300
+	MouseClick, left, x+90, y+15 ;	click en atacar DIANA
+	Sleep, 500
+	MouseClick, left, 1126, 539 ;	click en reducir tiempo	
+	Sleep, 300
+	MouseClick, left, 1153, 581 ;	click en segunda casilla
+	sleep, 250
+	MouseClick, left, 916, 574 ;	click en primera casilla
 	Sleep, 450
 	MouseClick, left, 884, 696 ;	click en cerrar
 	MouseMove, x, y
