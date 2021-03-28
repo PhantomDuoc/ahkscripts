@@ -243,7 +243,7 @@ g::
 	}
 }
 Return
-
+;	vender equipo en loop
 e::
 {
 	Loop, 100{
