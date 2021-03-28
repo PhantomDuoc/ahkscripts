@@ -11,13 +11,43 @@ l::
 }
 return
 
-;	atacar eventos con oro
+;	atacar eventos con 1era y segunda plantilla
 k::
 {
 	MouseGetPos, x, y
 	MouseClick, left, 629, 937 ; click en plantillas
 	Sleep, 300
 	MouseClick, left, 629, 888 ; click en relleno
+	Sleep, 300
+	MouseClick, left, 788, 927 ; click en aplicar todas
+	Sleep, 300
+	MouseClick, left, 629, 937 ; click en plantillas
+	Sleep, 300
+	MouseClick, left, 629, 907 ; click en 1era 
+	Sleep, 300
+	MouseClick, left, 735, 932 ; click en aplicar plantillas en 1 oleada
+	Sleep, 300
+	MouseClick, left, 1306, 993 ; click en autorellenar todo
+	Sleep, 300
+	MouseClick, left, 1424, 987 ; click en atacar
+	Sleep, 300
+	MouseClick, left, 779, 530 ; click en velocidad oro
+	Sleep, 300
+	MouseClick, left, 1107, 786 ; click en aceptar
+	MouseMove, x, y
+;	Sleep, 10000
+;	SoundPlay *-1
+}
+return
+
+;	atacar eventos con primera y cuarta plantilla
+;	SHIFT
++k::
+{
+	MouseGetPos, x, y
+	MouseClick, left, 629, 937 ; click en plantillas
+	Sleep, 300
+	MouseClick, left, 546, 841 ; click en 4ta plantilla
 	Sleep, 300
 	MouseClick, left, 788, 927 ; click en aplicar todas
 	Sleep, 300
@@ -173,6 +203,7 @@ m::
 }
 return
 
+;	vender gemas en loop
 g::
 {
 	MouseGetPos, x, y
@@ -182,7 +213,20 @@ g::
 		sleep, 500
 		MouseClick, left, 1148, 623	;	click en la casilla para vender gemas
 		Sleep, 500
-		MouseClick, left, 1117, 704	;	click en aceptar
+		MouseClick, left, 1050, 704	;	click en aceptar
+		sleep, 500
+	}
+}
+Return
+
+e::
+{
+	Loop, 100{
+		MouseClick, left, 757, 705 ;	click en el primer equipo
+		sleep, 500
+		MouseClick, left, 1148, 623	;	click en la casilla para vender gemas
+		Sleep, 500
+		MouseClick, left, 1120, 701	;	click en aceptar
 		sleep, 500
 	}
 }
