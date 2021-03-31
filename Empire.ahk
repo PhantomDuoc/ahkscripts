@@ -168,7 +168,10 @@ return
 +s::
 {
 	MouseGetPos, x, y
-
+	MouseClick, left, x, y
+	sleep,150
+	MouseClick, left, x, y+100
+	sleep, 300
 	MouseClick, left, 1107, 740	;	click en palomilla aceptar
 	sleep, 50
 	MouseClick, left, 1186, 562	;	click en velocidad pluma
