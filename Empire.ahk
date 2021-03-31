@@ -19,7 +19,7 @@ k::
 	Sleep, 300
 	MouseClick, left, 629, 888 ; click en relleno
 	Sleep, 300
-	MouseClick, left, 788, 927 ; click en aplicar todas
+	MouseClick, left, 788, 930 ; click en aplicar todas
 	Sleep, 300
 	MouseClick, left, 629, 937 ; click en plantillas
 	Sleep, 300
@@ -90,7 +90,7 @@ o::
 	MouseGetPos, x, y
 	MouseClick, left, x, y
 	sleep, 300
-	MouseClick, left, x+90, y+15 ;	click en atacar DIANA
+	MouseClick, left, x+100, y+25 ;	click en atacar DIANA
 	Sleep, 500
 	MouseClick, left, 1073, 695  ;	click en palomilla verde acecptar
 	Sleep, 700
@@ -150,6 +150,11 @@ return
 ;	espiar con oro
 s::
 {
+	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep,150
+	MouseClick, left, x, y+100
+	sleep, 300
 	MouseClick, left, 1107, 740	;	click en palomilla aceptar
 	sleep, 50
 	MouseClick, left, 777, 554	;	click en velocidad oro
