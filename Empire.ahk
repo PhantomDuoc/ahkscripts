@@ -1,5 +1,11 @@
-4::reload
-5::suspend
+f4::reload
+f5::
+
+Suspend
+
+Pause,,1
+
+return
 ; hace click en autorrellenar (herreria) y luego hace click en la acción.
 l::
 {
@@ -10,7 +16,6 @@ l::
 	MouseMove, x, y
 }
 return
-
 ;	atacar eventos con 1era y segunda plantilla
 k::
 {
@@ -254,8 +259,9 @@ Return
 ;	vender equipo en loop
 e::
 {
+	MouseGetPos, x, y
 	Loop, 100{
-		MouseClick, left, 757, 705 ;	click en el primer equipo
+		MouseClick, left, x, y ;	click en el primer equipo
 		sleep, 500
 		MouseClick, left, 1148, 623	;	click en la casilla para vender gemas
 		Sleep, 500
