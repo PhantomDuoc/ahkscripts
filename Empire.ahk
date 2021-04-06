@@ -39,7 +39,8 @@ k::
 	MouseClick, left, 779, 530 ; click en velocidad oro
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
-	MouseMove, x, y
+	Sleep, 300
+	MouseMove, 624, 888 ;	posicion arbitraria del campamento
 ;	Sleep, 10000
 ;	SoundPlay *-1
 }
@@ -69,7 +70,8 @@ return
 	MouseClick, left, 779, 530 ; click en velocidad oro
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
-	MouseMove, x, y
+	Sleep, 300
+	MouseMove, 624, 888 ;	posicion arbitraria del campamento
 ;	Sleep, 10000
 ;	SoundPlay *-1
 }
@@ -205,10 +207,22 @@ return
 }
 return
 
-;	apostar tropas
+;	iniciar ataque 
 a::
 {
-	MouseGetPos, x, yx
+	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep, 300
+	MouseClick, left, x+100, y+25 ;	click en atacar DIANA
+	Sleep, 500
+	MouseClick, left, 1073, 695 ;	click en palomilla verde aceptar
+}
+Return
+
+;	apostar tropas
+;	ApostarTropas::
+{
+MouseGetPos, x, y
 	MouseClick, left, 1432, 1001 ;	click en apostar
 	sleep, 250
 	MouseClick, left, 1186, 562	;	click en velocidad pluma
@@ -216,8 +230,7 @@ a::
 	MouseClick, left, 1091, 768	;	click en palomilla aceptar
 	MouseMove, x, y
 }
-Return
-	
+return
 
 ;	eliminar enfriamiento 	
 m::
@@ -286,5 +299,44 @@ e::
 		MouseClick, left, 1120, 701	;	click en aceptar
 		sleep, 500
 	}
+}
+Return
+
+up::
+{
+	MouseClick, left, 969, 990
+}
+Return
+
+down::
+{
+	MouseClick, left, 1084, 990
+}
+Return
+
+left::
+{
+	MouseClick, left, 913, 990
+}
+Return
+
+right::
+{
+	MouseClick, left, 1022, 990
+}
+Return
+
+c::
+{
+	MouseClick, left, 650, 885
+	Sleep, 300
+	MouseClick, left, 618, 594
+}
+Return
+
+numpad1::
+{
+	MouseClick, left, 618, 594
+	
 }
 Return
