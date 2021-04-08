@@ -32,7 +32,7 @@ k::
 	Sleep, 300
 	MouseClick, left, 735, 932 ; click en aplicar plantillas en 1 oleada
 	Sleep, 300
-	MouseClick, left, 1306, 993 ; click en autorellenar todo
+	MouseClick, left, 1220, 993 ; click en autorellenar todo
 	Sleep, 300
 	MouseClick, left, 1424, 987 ; click en atacar
 	Sleep, 300
@@ -135,13 +135,31 @@ p::
 }
 return
 
-;	comprar soldados
+;	comprar soldados derecha
 n::
 {
 	MouseGetPos, x, y
 	
 	Loop, 10{
 		MouseClick, left, 1210, 484	;	click en el soldado a comprar
+		sleep, 400
+		Loop, 21{
+			MouseClick, left, 928, 582	;	click en +10 tropas
+		}
+		MouseClick, left, 1097, 659	;	click en aceptar para comprar
+	}
+	MouseClick, left, 1087,661
+	MouseMove, x, y
+}
+return
+
+;	comprar soldados izq
++n::
+{
+	MouseGetPos, x, y
+	
+	Loop, 10{
+		MouseClick, left, 977, 484	;	click en el soldado a comprar
 		sleep, 400
 		Loop, 21{
 			MouseClick, left, 928, 582	;	click en +10 tropas
