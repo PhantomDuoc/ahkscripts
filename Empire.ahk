@@ -355,3 +355,13 @@ b::
 	MouseClick, left, 981, 700
 }
 return
+
++b::
+{
+	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep 450
+	MouseClick, left, 1153, 581 ;	click en segunda casilla
+}
+return
+
