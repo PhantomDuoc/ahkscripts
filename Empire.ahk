@@ -32,7 +32,7 @@ k::
 	Sleep, 300
 	MouseClick, left, 735, 932 ; click en aplicar plantillas en 1 oleada
 	Sleep, 300
-	MouseClick, left, 1306, 993 ; click en autorellenar todo
+	MouseClick, left, 1220, 993 ; click en autorellenar todo
 	Sleep, 300
 	MouseClick, left, 1424, 987 ; click en atacar
 	Sleep, 300
