@@ -351,7 +351,7 @@ b::
 	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
 	Sleep, 150
 	MouseClick, left, 916, 574
-	sleep 150
+	sleep 250
 	MouseClick, left, 981, 700
 }
 return
