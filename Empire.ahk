@@ -322,3 +322,18 @@ numpad1::
 	
 }
 Return
+
+b::
+{
+	MouseGetPos, x, y
+	MouseClick, left, x, y
+	sleep 450
+	MouseClick, left, 916, 574 ;	click en primera casilla
+	Sleep, 150
+	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
+	Sleep, 150
+	MouseClick, left, 916, 574
+	sleep 150
+	MouseClick, left, 981, 700
+}
+return
