@@ -100,8 +100,12 @@ o::
 	MouseClick, left, x+100, y+25 ;	click en atacar DIANA
 	Sleep, 500
 	MouseClick, left, 1073, 695  ;	click en palomilla verde acecptar
-	Sleep, 700
-	MouseClick, left, 1306, 993 ; click en autorellenar todo
+	Sleep, 1000
+	MouseClick, left, 629, 937 ; click en plantillas
+	Sleep, 500
+	MouseClick, left, 1135, 937 ; click en quinta plantilla
+	Sleep, 300
+	MouseClick, left, 788, 930 ; click en aplicar todas
 	Sleep, 300
 	MouseClick, left, 1424, 987 ; click en atacar
 	Sleep, 300
@@ -364,4 +368,16 @@ return
 	MouseClick, left, 1153, 581 ;	click en segunda casilla
 }
 return
+
+v::
+{
+	MouseClick, left, 1241, 993 ;	click en rellenar 1 ola
+	sleep, 150
+	MouseClick, left, 1424, 993 ;	click en atacar
+	sleep, 350
+	MouseClick, left, 760,520 ;	velocidad oro
+	sleep, 150
+	MouseClick, left, 1107, 786 ; click en aceptar
+}
+Return
 
