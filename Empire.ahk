@@ -306,30 +306,35 @@ e::
 }
 Return
 
+; frente autorrellenar
 up::
 {
 	MouseClick, left, 969, 990
 }
 Return
 
+; eliminar ola actual
 down::
 {
 	MouseClick, left, 1084, 990
 }
 Return
 
+; flanco izquierdo autorrellenar
 left::
 {
 	MouseClick, left, 913, 990
 }
 Return
 
+; flanco derecho autorrellenar
 right::
 {
 	MouseClick, left, 1022, 990
 }
 Return
 
+; click en comandantes y seleccionar el 11avo
 c::
 {
 	MouseClick, left, 650, 885
@@ -381,3 +386,89 @@ v::
 }
 Return
 
+; quitar herramientas combo para atacar extranjeros rapidamente
+numpad0::
+{
+	MouseClick, left, 1160, 990 ; click en tipos de herramientas
+	Sleep, 150
+	MouseClick, left, 1374, 937 ; click en herramientas combo
+	Sleep, 150
+	MouseClick, left, 1390, 840 ; click en x para cerrar popup
+}
+return
+
+; autorrellenar una ola
+numpaddot::
+{
+	MouseClick, left, 1234, 990
+}
+return
+
+; autorrellenar todas las olas
+numpadadd::
+{
+	MouseClick, left, 1306, 990 
+}
+return
+
+; sacar todas las herramientas
+numpadsub::
+{
+	MouseClick, left, 1160, 990 ; click en tipos de herramientas
+	Sleep, 150
+	MouseClick, left, 1160, 930
+	Sleep, 150
+	MouseClick, left, 1215, 930
+	Sleep, 150
+	MouseClick, left, 1270, 930
+	Sleep, 150
+	MouseClick, left, 1320, 930
+	Sleep, 150
+	MouseClick, left, 1374, 930
+	Sleep, 150
+	MouseClick, left, 1390, 840
+}
+return
+
+; click en ola anterior (izquierda)
+numpadmult::
+{
+	MouseClick, left, 738, 880
+}
+Return
+; click en ola siguiente (derecha)
+numpaddiv::
+{
+	
+	MouseClick, left, 808,880
+}
+return
+
+; atacar con plumas
+numpad2::
+{
+	MouseClick, left, 1420, 985
+	Sleep, 150
+	MouseClick, left, 1190, 540
+	Sleep, 150
+	MouseClick, left, 1100, 785
+}
+Return
+
+; poner banderas en todas las olas
+numpad3::
+{
+	MouseClick, left, 629, 937 ; click en plantillas
+	Sleep, 300
+	MouseClick, left, 629, 888 ; click en relleno
+	Sleep, 300
+	MouseClick, left, 788, 930 ; click en aplicar todas
+	Sleep, 300
+}
+return
+
+Numpad5::
+{
+	MouseClick, left, 788, 930 ; click en aplicar todas
+}
+return
