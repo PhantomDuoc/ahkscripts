@@ -40,7 +40,7 @@ k::
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
 	Sleep, 300
-	MouseMove, 935, 370 ;	posicion arbitraria del campamento
+	MouseMove, 1155, 740 ;	posicion arbitraria del campamento
 ;	Sleep, 10000
 ;	SoundPlay *-1
 }
@@ -445,11 +445,22 @@ numpaddiv::
 return
 
 ; atacar con plumas
-numpad2::
++numpad2::
 {
 	MouseClick, left, 1420, 985
 	Sleep, 150
 	MouseClick, left, 1190, 540
+	Sleep, 150
+	MouseClick, left, 1100, 785
+}
+Return
+
+;atacar con oro
+numpad2::
+{
+	MouseClick, left, 1420, 985
+	Sleep, 150
+	MouseClick, left, 787, 523
 	Sleep, 150
 	MouseClick, left, 1100, 785
 }
