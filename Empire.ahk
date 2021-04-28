@@ -445,7 +445,7 @@ numpaddiv::
 return
 
 ; atacar con plumas
-2::
+numpad8::
 {
 	MouseClick, left, 1420, 985
 	Sleep, 150
