@@ -431,13 +431,13 @@ numpadsub::
 return
 
 ; click en ola anterior (izquierda)
-numpadmult::
+numpaddiv::
 {
 	MouseClick, left, 738, 880
 }
 Return
 ; click en ola siguiente (derecha)
-numpaddiv::
+numpadmult::
 {
 	
 	MouseClick, left, 808,880
