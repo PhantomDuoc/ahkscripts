@@ -40,7 +40,7 @@ k::
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
 	Sleep, 300
-	MouseMove, 640, 889 ;	posicion arbitraria del campamento
+	MouseMove, 958, 258 ;	posicion arbitraria del campamento
 ;	Sleep, 10000
 ;	SoundPlay *-1
 }
