@@ -40,7 +40,7 @@ k::
 	Sleep, 300
 	MouseClick, left, 1107, 786 ; click en aceptar
 	Sleep, 300
-	MouseMove, 638, 892 ;	posicion arbitraria del campamento
+	MouseMove, 951, 379 ;	posicion arbitraria del campamento
 ;	Sleep, 10000
 ;	SoundPlay *-1
 }
@@ -277,7 +277,6 @@ return
 return
 
 ;	vender gemas en loop
-g::
 {
 	MouseGetPos, x, y
 
@@ -360,8 +359,8 @@ b::
 	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
 	Sleep, 150
 	MouseClick, left, 916, 574
-	sleep 250
-	MouseClick, left, 981, 700
+	Sleep, 500
+	MouseClick, left, 916, 574
 }
 return
 
@@ -481,5 +480,32 @@ return
 Numpad5::
 {
 	MouseClick, left, 788, 930 ; click en aplicar todas
+}
+return
+
+Numpad9::
+{
+	MouseClick, left, 1881, 140 ; click en configuraciones
+	Sleep, 500
+	MouseClick, left, 1889, 206 ; click en opciones
+	Sleep, 1000
+	MouseClick, left, 841, 570 ; click en mostrar flechas en el mundo
+	sleep, 500
+	MouseClick, left, 1189, 835 ; click en palomilla aceptar
+}
+return
+
+g::
+{
+	MouseGetPos, x, y
+	
+	Loop{
+		MouseClick, left, 1180, 680	;	click en el oro
+		sleep, 400
+		MouseClickDrag, left, 835, 608, 944, 608, 3 ; arrastrar slider para comprar 150k de oro
+		sleep, 400
+		MouseClick, left, 1087, 662 ; palomilla aceptar
+	}
+	MouseMove, x, y
 }
 return
