@@ -237,7 +237,7 @@ MouseGetPos, x, y
 return
 
 ;	eliminar enfriamiento 	
-m::
++m::
 {
 	MouseGetPos, x, y
 	MouseClick, left, x, y
@@ -258,7 +258,7 @@ m::
 return
 
 ;	eliminar enfriamiento 	
-+m::
+m::
 {
 	MouseGetPos, x, y
 	MouseClick, left, x, y
@@ -267,7 +267,9 @@ return
 	Sleep, 500
 	MouseClick, left, 1126, 539 ;	click en reducir tiempo	
 	Sleep, 300
-	MouseClick, left, 1153, 581 ;	click en segunda casilla
+	MouseClick, left, 916, 574 ;	click en primera casilla
+	sleep, 250
+	MouseClick, left, 916, 574 ;	click en primera casilla
 	sleep, 250
 	MouseClick, left, 916, 574 ;	click en primera casilla
 	Sleep, 450
