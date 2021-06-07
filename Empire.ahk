@@ -46,9 +46,33 @@ k::
 }
 return
 
+
++k::
+{
+	MouseGetPos, x, y
+	MouseClick, left, 629, 937 ; click en plantillas
+	Sleep, 300
+	MouseClick, left, 629, 888 ; click en relleno
+	Sleep, 300
+	MouseClick, left, 788, 930 ; click en aplicar todas
+	Sleep, 300
+	MouseClick, left, 629, 937 ; click en plantillas
+	Sleep, 300
+	MouseClick, left, 629, 907 ; click en 1era 
+	Sleep, 300
+	MouseClick, left, 735, 932 ; click en aplicar plantillas en 1 oleada
+	Sleep, 300
+	MouseClick, left, 1424, 987 ; click en atacar
+	Sleep, 300
+	MouseClick, left, 779, 530 ; click en velocidad oro
+	Sleep, 300
+	MouseClick, left, 1107, 786 ; click en aceptar
+}
+return
+
 ;	atacar eventos con primera y cuarta plantilla
 ;	SHIFT
-+k::
+::
 {
 	MouseGetPos, x, y
 	MouseClick, left, 629, 937 ; click en plantillas
@@ -237,7 +261,7 @@ MouseGetPos, x, y
 return
 
 ;	eliminar enfriamiento 	
-+m::
+m::
 {
 	MouseGetPos, x, y
 	MouseClick, left, x, y
@@ -258,7 +282,7 @@ return
 return
 
 ;	eliminar enfriamiento 	
-m::
++m::
 {
 	MouseGetPos, x, y
 	MouseClick, left, x, y
@@ -360,9 +384,10 @@ b::
 	Sleep, 150
 	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
 	Sleep, 150
-	MouseClick, left, 916, 574
+	MouseClick, left, 916, 574 ;	click en primera casilla
 	Sleep, 500
-	MouseClick, left, 916, 574
+	MouseClick, left, 916, 574 ;	click en primera casilla
+	Sleep, 300
 }
 return
 
@@ -371,7 +396,15 @@ return
 	MouseGetPos, x, y
 	MouseClick, left, x, y
 	sleep 450
-	MouseClick, left, 1153, 581 ;	click en segunda casilla
+	MouseClick, left, 916, 574 ;	click en primera casilla
+	Sleep, 150
+	MouseClick, left, 741, 578 ;	click en flecha hacia la izq
+	Sleep, 150
+	MouseClick, left, 916, 574 ;	click en primera casilla
+	Sleep, 500
+	MouseClick, left, 
+	Sleep, 300
+	MouseMove, x, y
 }
 return
 
