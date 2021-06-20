@@ -375,7 +375,7 @@ numpad1::
 }
 Return
 
-b::
++b::
 {
 	MouseGetPos, x, y
 	MouseClick, left, x, y
@@ -391,7 +391,7 @@ b::
 }
 return
 
-+b::
+b::
 {
 	MouseGetPos, x, y
 	MouseClick, left, x, y
@@ -402,7 +402,7 @@ return
 	Sleep, 150
 	MouseClick, left, 916, 574 ;	click en primera casilla
 	Sleep, 500
-	MouseClick, left, 
+	MouseClick, left, 982, 700 ; 	click en aceptar descuento de reducción instantane¿eanndansd UWUWUUW
 	Sleep, 300
 	MouseMove, x, y
 }
