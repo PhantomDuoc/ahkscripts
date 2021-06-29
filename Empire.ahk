@@ -10,7 +10,7 @@ return
 l::
 {
 	MouseGetPos, x, y
-	MouseClick, left, 1225, 610
+	MouseClick, left, 1225, 611
 	Sleep, 50
 	MouseClick, left, 1215, 554
 	MouseMove, x, y
